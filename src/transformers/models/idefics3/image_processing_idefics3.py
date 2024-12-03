@@ -221,7 +221,8 @@ def make_pixel_mask(
 
 def convert_to_rgb(
     image: np.ndarray,
-    palette: Optional[PIL.ImagePalette.ImagePalette] = None,
+    # palette: Optional[PIL.ImagePalette.ImagePalette] = None,
+    palette = None,
     data_format: Optional[Union[str, ChannelDimension]] = None,
     input_data_format: Optional[Union[str, ChannelDimension]] = None,
 ) -> ImageInput:
